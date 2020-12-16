@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Work Day Scheduler</title>
+  </head>
+
+  <body>
+    <header class="jumbotron">
+      <h1 class="display-3">Work Day Scheduler</h1>
+      <p class="lead">A simple calendar app for scheduling your work day</p>
+      <p id="currentDay" class="lead"></p>
+    </header>
+    <div class="container">
+      <!-- Timeblocks go here -->
+      <div class="row">
+        <div class="col-md-1 hour">
+          8AM
+        </div>
+        <textarea class="col-md-10 text-input" id="input1" data-time="8"></textarea>
+        <div class="col-md-1 saveBtn" id="saveBtn1">
+          <p><i class="fa fa-check"></i></p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-1 hour">
+          9AM
+        </div>
+        <textarea class="col-md-10 text-input" id="input2" data-time="9"></textarea>
+        <div class="col-md-1 saveBtn" id="saveBtn2">
+          <p><i class="fa fa-check"></i></p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-1 hour">
+          10AM
+        </div>
+        <textarea class="col-md-10 text-input" id="input3" data-time="10"></textarea>
+        <div class="col-md-1 saveBtn" id="saveBtn3">
+          <p><i class="fa fa-check"></i></p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-1 hour">
+          11AM
+        </div>
+        <textarea class="col-md-10 text-input" id="input4" data-time="11"></textarea>
+        <div class="col-md-1 saveBtn" id="saveBtn4">
+          <p><i class="fa fa-check"></i></p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-1 hour">
+          12PM
+        </div>
+        <textarea class="col-md-10 text-input" id="input5" data-time="12"></textarea>
+        <div class="col-md-1 saveBtn" id="saveBtn5">
+          <p><i class="fa fa-check"></i></p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-1 hour">
+          1PM
+        </div>
+        <textarea class="col-md-10 text-input" id="input6" data-time="1"></textarea>
+        <div class="col-md-1 saveBtn" id="saveBtn6">
+          <p><i class="fa fa-check"></i></p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-1 hour">
+          2PM
+        </div>
+        <textarea class="col-md-10 text-input" id="input7" data-time="2"></textarea>
+        <div class="col-md-1 saveBtn" id="saveBtn7">
+          <p><i class="fa fa-check"></i></p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-1 hour">
+          3AM
+        </div>
+        <textarea class="col-md-10 text-input" id="input8" data-time="3"></textarea>
+        <div class="col-md-1 saveBtn" id="saveBtn8">
+          <p><i class="fa fa-check"></i></p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-1 hour">
+          4PM
+        </div>
+        <textarea class="col-md-10 text-input" id="input9" data-time="4"></textarea>
+        <div class="col-md-1 saveBtn" id="saveBtn9">
+          <p><i class="fa fa-check"></i></p>
+        </div>
+      </div>
+      <div class="row" id="lastRow">
+        <div class="col-md-1 hour">
+          5PM
+        </div>
+        <textarea class="col-md-10 text-input" id="input10" data-time="5"></textarea>
+        <div class="col-md-1 saveBtn" id="saveBtn10">
+          <p><i class="fa fa-check"></i></p>
+        </div>
+      </div>
+
+
+
+
+
+    </div>
+    <script src="jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+  </body>
+</html>
