@@ -17,32 +17,19 @@ $("#saveBtn1").on("click", function(){
     console.log("clicked");
 });
 
-// TODO: z index each tab to bring forward with mouse hover/click
-// $(".row").on("mouseover", function(){
-//     $(this).style.background-color: green;
-//     $(this).css("z-index", "10")
-//     // console.log(this);
-// })
-// first()
-
-// for (i = 8; i <= 17; i++) {
-//     var objectValues = listItems["saveBtn"+i];
-//     var buttonId = saveBtns[i];
-//     var areaId = $(textArea)[i];
-//     // areaId.text(objectValues)
-// };
-
 // check LocalStorage
 function first() {
     var storedInfo = JSON.parse(localStorage.getItem("userInfo"));
 
+    // if/else 
     if (storedInfo !== null) {
         listItems = object.assign(storedInfo, listItems);
+        // console.log(object); ???????????????????????????????????
     } else {
         return;
     }
 };
-
+// click event for save buttons
 saveBtns.on("click", function () {
     var userText = $(this).prev().val();
     console.log(userText);
@@ -51,7 +38,7 @@ saveBtns.on("click", function () {
 
     localStorage.setItem("listItems", JSON.stringify(listItems));
 });
-
+// function with if statements to identify colors of rows based on current hour
 $.each((textArea), function () {
     var timeData = $(this).attr("data-time");
     console.log($(this));
@@ -75,22 +62,3 @@ $.each((textArea), function () {
         // console.log(timeData);
     }
 })
-// $("#input"+i)
-// $(".row")
-
-// CHECK FOR LOCAL DATA
-//get stored scores from localStorage
-//if info retrieved from local, update local array
-
-// SAVE CURRENT TEXT OF INPUT FIELD
-// element variable for text area of clicked button
-// element variable for the id of the button clicked
-// update inputObj at matching key value
-// stringify and save inputbObj locally after udpating
-// check time vs textarea data-time
-
-
-
-
-
-// localStorage.setItem(userInput)
