@@ -15,9 +15,9 @@ textarea{
 .text-input, .hour, .saveBtn {
   border-top: 1px solid white;
 }
-.text-input {
+/* .text-input {
   background-color: lightblue;
-}
+} */
 #lastRow {
   white-space: pre-wrap;
   height: 60px;
@@ -45,7 +45,13 @@ textarea{
 .row {
   white-space: pre-wrap;
   height: 80px;
-  border-top: 1px solid white;
+  /* border-top: 1px solid white; */
+  z-index:0;
+}
+.row:hover {
+  z-index: 10;
+  transform:scale(1.05);
+  filter: drop-shadow(0 0 2rem black);
 }
 
 .hour {
