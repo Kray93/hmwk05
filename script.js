@@ -17,6 +17,11 @@ $("#saveBtn1").on("click", function(){
     console.log("clicked");
 });
 
+for (var i = 0; i < listItems.length; i++) {
+    
+    
+}
+
 // check LocalStorage
 function first() {
     var storedInfo = JSON.parse(localStorage.getItem("userInfo"));
@@ -37,6 +42,16 @@ saveBtns.on("click", function () {
     listItems[boxTime] = userText;
 
     localStorage.setItem("listItems", JSON.stringify(listItems));
+    $("#input1 .text-input").val(localStorage.getItem("input1"));
+    $("#input2 .text-input").val(localStorage.getItem("input2"));
+    $("#input3 .text-input").val(localStorage.getItem("input3"));
+    $("#input4 .text-input").val(localStorage.getItem("input4"));
+    $("#input5 .text-input").val(localStorage.getItem("input5"));
+    $("#input6 .text-input").val(localStorage.getItem("input6"));
+    $("#input7 .text-input").val(localStorage.getItem("input7"));
+    $("#input8 .text-input").val(localStorage.getItem("input8"));
+    $("#input9 .text-input").val(localStorage.getItem("input9"));
+    $("#input10 .text-input").val(localStorage.getItem("input10"));
 });
 // function with if statements to identify colors of rows based on current hour
 $.each((textArea), function () {
@@ -61,4 +76,6 @@ $.each((textArea), function () {
         // console.log(currentHour);
         // console.log(timeData);
     }
-})
+    
+});
+
