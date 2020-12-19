@@ -2,7 +2,7 @@
 var textArea = $("textarea");
 var saveBtns = $(".saveBtn");
 
-var listItems = JSON.parse(localStorage.getItem("listItems") || "{}");
+var listItems = JSON.parse(localStorage.getItem("listItems") || "[]");
 
 // add date to page and console log
 var currentDate = dayjs().format('MMMM DD, YYYY')
@@ -17,19 +17,13 @@ $("#saveBtn1").on("click", function(){
     console.log("clicked");
 });
 
-for (var i = 0; i < listItems.length; i++) {
-    
-    
-}
-
 // check LocalStorage
 function first() {
     var storedInfo = JSON.parse(localStorage.getItem("userInfo"));
 
     // if/else 
     if (storedInfo !== null) {
-        listItems = object.assign(storedInfo, listItems);
-        // console.log(object); ???????????????????????????????????
+        listItems = Array.assign(storedInfo, listItems);
     } else {
         return;
     }
